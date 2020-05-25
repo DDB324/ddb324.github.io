@@ -41,7 +41,7 @@
 
 <meta itemprop="datePublished" content="2020-05-24T23:13:31&#43;08:00" />
 <meta itemprop="dateModified" content="2020-05-24T23:13:31&#43;08:00" />
-<meta itemprop="wordCount" content="201">
+<meta itemprop="wordCount" content="203">
 
 
 
@@ -161,9 +161,9 @@
 
 <p>本文只介绍windows的安装方式
 1. 到 <a href="https://github.com/gohugoio/hugo/releases">hugo下载地址</a> 下载hugo_xxx_Windows-64bit.zip(32位系统下载hugo_xxx_Windows-64bit.zip)
-   <img src="static1.png" alt="hugo下载" />
+   <img src="/1.png" alt="hugo下载" />
 2. 解压，将hugo.exe粘贴到 <code>D:\Softwear\hugo\</code> 路径下（Softwear和hugo文件夹需要自己新建）
-   <img src="static2.png" alt="hugo.exe" />
+   <img src="/2.png" alt="hugo.exe" />
 3. 把 <code>D:\Softwear\hugo\</code> 加到path
    (添加到Path步骤)
       3.1 右击 此电脑
@@ -180,16 +180,16 @@
    Hugo Static Site Generator vxxx windows/amd64 BuildDate: xxxx-xx-xxxxx:xx:xxx
 </code></pre>
 
-<p>说明安装成功<img src="static3.png" alt="hugo version" /></p>
+<p>说明安装成功<img src="/3.png" alt="hugo version" /></p>
 
 <h2 id="快速搭建网站">快速搭建网站</h2>
 
 <h3 id="新建本地仓库-creator目录">新建本地仓库(creator目录)</h3>
 
 <ol>
-<li>进入<a href="https://gohugo.io/">hugo官网</a>点击页面下方的 Quick Start<img src="static4.png" alt="quick start" /></li>
+<li>进入<a href="https://gohugo.io/">hugo官网</a>点击页面下方的 Quick Start<img src="/4.png" alt="quick start" /></li>
 
-<li><p>（本步骤看完再操作！！！）新建一个没有文件的安全的目录下运行cmder,复制step2:create a new site中的代码<img src="static5.png" alt="step2" /></p>
+<li><p>（本步骤看完再操作！！！）新建一个没有文件的安全的目录下运行cmder,复制step2:create a new site中的代码<img src="/5.png" alt="step2" /></p>
 
 <pre><code>hugo new site quickstart
 </code></pre>
@@ -206,7 +206,7 @@
 
 <p>意思是：用vscode打开当前目录。</p></li>
 
-<li><p>用vscode新建终端(此时vscode应显示在creator目录中),输入step3中的第一行代码并运行<img src="static6.png" alt="step3" /></p>
+<li><p>用vscode新建终端(此时vscode应显示在creator目录中),输入step3中的第一行代码并运行<img src="/6.png" alt="step3" /></p>
 
 <pre><code>git init
 </code></pre>
@@ -218,9 +218,9 @@
 <pre><code>git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
 </code></pre>
 
-<p>下载完成后输入第三句<img src="static7.png" alt="step3" /></p></li>
+<p>下载完成后输入第三句<img src="/7.png" alt="step3" /></p></li>
 
-<li><p>继续输入step4中<img src="static8.png" alt="step4" /></p>
+<li><p>继续输入step4中<img src="/8.png" alt="step4" /></p>
 
 <pre><code>hugo new posts/my-first-post.md
 </code></pre>
@@ -236,7 +236,7 @@
 
 <p>draft:ture的意思是草稿状态，在这状态下不会发布，改成draft:false才能发布。</p></li>
 
-<li><p>继续在终端中运行step5的<a href="static9.png">step5</a></p>
+<li><p>继续在终端中运行step5的<a href="/9.png">step5</a></p>
 
 <pre><code>  hugo server -D
 </code></pre>
@@ -259,7 +259,12 @@ title = &quot;xxx的博客&quot;
 theme = &quot;ananke&quot;
 </code></pre></li>
 
-<li><p>在vscode新建一个终端,输入step7的<code>hugo -D</code>完成网站的搭建。注意：此时网站只是在本地，需要将它上传到github.</p></li>
+<li><p>在vscode新建一个终端,输入step7的</p>
+
+<pre><code>hugo -D
+</code></pre>
+
+<p>完成网站的搭建。注意：此时网站只是在本地，需要将它上传到github.</p></li>
 </ol>
 
 <h2 id="将网站上传到github-重要">将网站上传到github(重要)</h2>
